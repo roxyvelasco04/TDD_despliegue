@@ -45,5 +45,5 @@ jobs:
           aws-session-token: ${{secrets.AWS_SESSION_TOKEN}}
           aws-region: us-east-1
 
-      - name: test aws cli
-        run: aws s3api list-buckets
+      - name: test aws balde
+        run: aws s3 cp funciones.py s3://baldespliegue
